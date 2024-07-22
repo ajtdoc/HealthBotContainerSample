@@ -115,16 +115,15 @@ function initBotConversation() {
                             jsonWebToken: jsonWebToken,
 
                             // Use the following activity to proactively invoke a bot scenario
-                            /*
+
                             triggeredScenario: {
-                                trigger: "{scenario_id}",
+                                trigger: "testProactiveScenario", //Put the name of scenario you want to invoke
                                 args: {
                                     location: location,
-                                    myVar1: "{custom_arg_1}",
-                                    myVar2: "{custom_arg_2}"
+                                    message: "This is a custom message that I pushed in to bot - sincerely Arun :-)" // Specify the arg you want to pass in . In bot scenario access it using scenario.scenarioArgs.message
                                 }
                             }
-                            */
+
                         }
                     }
                 }
